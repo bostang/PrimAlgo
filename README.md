@@ -1,6 +1,10 @@
 # PrimAlgo
 Presentasi terakhir mata kuliah EL2003 Struktur Diskret tentang pencarian minimum spanning tree menggunakan algoritma Prim.
 
+####   Perintah :
+> - Kembangkan program untuk algoritma Prim<br>
+> - Design skenario untuk mengetes algoritma Prim
+
 ### Anggota kelompok :
 - Farhan Hakim Iskandar (13220007)
 - Bintang Moralino Cerdasa (13220017)
