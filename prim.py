@@ -50,8 +50,7 @@ def primMST(cost):
 	# menambahkan initial vertex pada MST
 	inMST[0] = True
 
-	# menambahkan sejumlah V - 2  edge ke dalam MST. 
-		# mengapa V - 2 dan bukan V - 1 ? karena initial vertex sudah ditambahkan sebelumnya
+	# menambahkan sejumlah V - 1  edge ke dalam MST. 
 	edge_count = 0
 	mincost = 0
 	while edge_count < V - 1:
