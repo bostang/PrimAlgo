@@ -21,6 +21,8 @@
 	# Variabel
 		# V : integer { jumlah vertex, dalam hal ini jumlah kota }
 		# INT_MAX : integer { infinity }
+		# kota : array of string { list kota yang ingin dihubungkan }
+		# distance : array of array of integer { graph yang ingin kita cari MST-nya  }
 	# Fungsi / Prosedur
 		# function isValidEdge(int u, int v, bool inMST) -> boolean
 			# mengembalikan True jika edge u-v adalah edge yang valid untuk di-tambahkan ke MST ( minimum spanning tree ).
@@ -32,6 +34,7 @@
 from sys import maxsize
 INT_MAX = maxsize
 V = 11
+kota = ["Medan","Palembang","Jakarta","Bandung","Bali","Pontianak","Makassar","Balikpapan", "Gorontalo", "Kupang", "Papua Barat"]
 
 # REALISASI FUNGSI/PROSEDUR
 
@@ -81,13 +84,14 @@ def primMST(distance):
 						b = j
 
 		if a != -1 and b != -1:
-			print("Edge %d: (%d, %d) distance: %d" %
-				(edge_count, a, b, minn))
+			print("Edge %d: (%s, %s) distance: %d Km" %
+				(edge_count,kota[a], kota[b], minn))
+			print(mindistance)
 			edge_count += 1
 			mindistance += minn
 			inMST[b] = inMST[a] = True # jika vertex a dan b telah ditambahkan ke MST, maka akan dibuat true
 	
-	print("Minimum distance = %d" % mindistance)
+	print("Minimum Total distance = %d Km" % mindistance)
 
 # Driver Code
 if __name__ == "__main__":
