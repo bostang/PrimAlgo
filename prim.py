@@ -23,7 +23,7 @@ V = 5
 
 def isValidEdge(u, v, inMST):
 	# KAMUS LOKAL
-		# inMST : array of array of integer { MST yang ingin dicari minimum cost-nya } 
+		# inMST : array of bool { array yang menyatakan apakah suatu vertex telah di-include ke MST atau belum } 
 	# ALGORITMA
 	if u == v:
 		return False
