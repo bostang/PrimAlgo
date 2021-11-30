@@ -43,6 +43,8 @@ def primMST(cost):
 			# a, b : integer { nomor vertex yang termasuk dalam edge }
 		
 	# ALGORITMA 
+	
+	# menginisasi semua vertex belum ditambahkan ke MST
 	inMST = [False] * V
 
 	# menambahkan initial vertex pada MST
